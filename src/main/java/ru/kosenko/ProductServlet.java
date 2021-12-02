@@ -13,17 +13,16 @@ public class ProductServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Product[] products = {
-                new Product(1, "", 1200),
-                new Product(2,"", 700),
-                new Product(3,"", 850),
-                new Product(4,"", 1150),
-                new Product(5,"", 750),
-                new Product(6,"", 940),
-                new Product(7,"", 680),
-                new Product(8,"", 970),
-                new Product(9,"", 1020),
-                new Product(10,"", 1130),
-                new Product(11,"", 975)
+                new Product(1, "Xiaomi Redmi 10 4/64GB", 15900),
+                new Product(2,"Xiaomi Redmi Note 10S 6/128GB", 21700),
+                new Product(3,"Xiaomi Redmi 9A 2/32GB", 8450),
+                new Product(4,"Xiaomi 11 Lite NE 5G 8/256GB", 31150),
+                new Product(5,"POCO F3 8/256GB (серебристый) ", 34750),
+                new Product(6,"POCO F3 6/128GB (серебристый)", 31940),
+                new Product(7,"Xiaomi Redmi 9C NFC 2/32GB (синий)", 9680),
+                new Product(8,"Xiaomi Redmi Note 10S 6/128GB (серый)", 21970),
+                new Product(9,"Xiaomi 11T Pro 8/128GB (синий) ", 53020),
+                new Product(10,"Xiaomi 11 Lite NE 5G 8/128GB (розовый) ", 31930)
         };
         for (Product product : products){
             resp.getWriter().println("id" + product.getId() + ", " +
